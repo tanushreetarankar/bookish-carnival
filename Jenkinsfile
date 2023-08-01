@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment { 
+        NAME = 'vignesh'
+    }
     triggers {
         cron('* * * * *')
     }
